@@ -15,7 +15,6 @@ city_list = ["Mont Saint Michel", "St Malo", "Bayeux", "Le Havre", "Rouen", "Par
 
 place_lat = []
 place_lon = []
-place_name = []
 
 # Create city df
 
