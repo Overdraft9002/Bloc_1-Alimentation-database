@@ -24,7 +24,6 @@ for i in city_list:
     city_data_json = city_data_raw.json()
     place_lat.append(city_data_json[0]['lat'])
     place_lon.append(city_data_json[0]['lon'])
-#   place_name.append(city_data_json[0]['display_name'])
 
 df_cities = pd.DataFrame(zip(city_list, place_lat, place_lon), columns = ['location', 'lat', 'lon'])
 
@@ -59,7 +58,7 @@ class BookingSpider(scrapy.Spider):
     cities = city_list
 
     def parse(self, response):
-        # FormRequest used to make a search in Paris
+        # FormRequest used to make a search on booking.com
         for i in self.cities:
             yield scrapy.FormRequest.from_response(
                 response,
