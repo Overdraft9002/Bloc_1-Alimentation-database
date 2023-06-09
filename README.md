@@ -1,5 +1,7 @@
 # Bloc 1 - Construction et alimentation d'une infrastructure de gestion de donnée
 
+This project aims to demonstrate how to scrape data from the web, store them into a databse for future use, upload data to S3 and use SQL to querry online database for visulisation using plotlyexpress.
+
 In Bloc_1 file :
   - A "Data" file containing the results after running the scritps
   - kayak_project.py which creates the datasets
